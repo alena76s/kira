@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С днём рождения!</title>
+    <style>
+        /* Общие настройки */
+	h1 {
+    color: #fdfdc9;
+font-size: 4em; 
+	}
+
+p {
+    color: #ff69b4; 
+}
+
+.caption {
+    color: #ff69b4; 
+}
+
+.card > div {
+    color: white; 
+}
+
+footer p {
+    color: #fdfdc9; 
+}
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #efe1d5;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            padding: 20px;
+            background-color: #c69fd5;
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            display: grid;
+            gap: 20px;
+            place-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* Карточки с фотографиями */
+        .card {
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(1, 1, 1, 1);
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .card > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .card:hover > div {
+            display: flex;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Надписи над карточками */
+        .caption {
+            font-size: 1.5rem;
+	    font-weight: 700;
+            margin-bottom: 10px;
+            color: #302f2c;
+        }
+
+        /* Заключительная надпись */
+        footer p {
+            font-size: 1.6rem;
+	    font-weight: 800;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <h1>С днём рождения, моя пикмулька!</h1>
+    </header>
+
+    <!-- Основная часть с фотографиями -->
+    <main>
+        <section>
+            <div class="caption">С днем рождения Кира</div>
+            <div class="card">
+                <img src="images/photo_15.jpg" alt="Первая фотография">
+                <div>Ты будто девочка с картинки!</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="caption">Никогда ничего не бойся!</div>
+            <div class="card">
+                <img src="images/photo_11.jpg" alt="Вторая фотография">
+                <div>Если меня спросят, что такое, в мире красота - я покажу им тебя!</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="caption">Живи здесь и сейчас!</div>
+            <div class="card">
+                <img src="images/photo_13.jpg" alt="Третья фотография">
+                <div>Ты как звёзды в небе тебя сложно не заметить!</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="caption">Кайфуй!!!</div>
+            <div class="card">
+                <img src="images/photo_12.jpg" alt="Четвёртая фотография">
+                <div>Ты всегда будешь моим номером один!</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="caption">Жизнь одна!</div>
+            <div class="card">
+                <img src="images/photo_14.jpg" alt="Пятая фотография">
+                <div>Ты мне попала в самое сердце на поражение!</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>Ты львица! Ты по натуре победительница, королева!</p>
+    </footer>
+</body>
+</html>
